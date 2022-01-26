@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .invoice-container {
+        max-width: 100%;
+        margin: auto;
+        padding: 30px;
+        font-size: 12px;
+        line-height: 24px;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        color: #000;
+      }
+
+      .invoice-box {
+        max-width: 100%;
+        margin: auto;
+      }
+
+      .invoice-box table {
+        line-height: inherit;
+        text-align: left;
+      }
+
+      .invoice-box table td {
+        vertical-align: middle;
+      }
+      .invoice-box table tr.top table {
+        border-bottom: 1px solid #000;
+      }
+
+      .invoice-box table tr.top table td.title {
+        font-size: 45px;
+        line-height: 45px;
+        color: #333;
+      }
+
+      .invoice-box table tr.heading {
+        font-size: 10px;
+      }
+
+      .invoice-box table tr.product-list {
+        font-size: 10px;
+      }
+      table.product-details td,
+      table.product-details th {
+        border: 1px solid #f1f1f1;
+      }
+
+      /* .product-td {
+            border-bottom: 1px solid #000;
+        } */
+
+      .product-td td {
+        height: 200px;
+      }
+
+      .product-td td:last-child {
+        border: none;
+      }
+
+      .bank-details {
+        font-size: 10px;
+      }
+
+      .bank-details th {
+        border-bottom: 1px solid #000;
+        text-align: left;
+      }
+
+      .final-Amount th {
+        text-align: left;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin: 0;
+      }
+
+      /** RTL **/
+      .rtl {
+        direction: rtl;
+        font-family: Tahoma, "Helvetica Neue", "Helvetica", Helvetica, Arial,
+          sans-serif;
+      }
+
+      .rtl table {
+        text-align: right;
+      }
+
+      .rtl table tr td:nth-child(2) {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="pageHeader"
+    class="heading"
+    style="font-size: 10px;
+     margin-left: auto;
+     padding: 1.5rem;
+     background: #f7f4f2;
+     line-height: inherit;
+    width: 100%;
+    margin-bottom: 2rem;
+    height:100px;"
+    
+  >
+            <div style="padding:0 1rem;">
+              <div style="text-align: left; vertical-align: middle;float: left;width: 30%;">
+                <div style="float:left;">
+                  <img
+                    src="data:image/png;base64,<%= data.logo %>"
+                    style="height: 70px;"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="
+                    margin-left: 1rem;
+                    vertical-align: middle;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    float:left;
+                  "
+                >
+                  <h5 style="font-size: 1rem">Invoice</h5>
+                  <p><%= data.apid %></p>
+                </div>
+              </div>
+              <div style="
+                  vertical-align: middle;
+                  float: right;
+                  width: 35%;
+                "
+              >
+                <p style="font-size: 16px">
+                  <b><%= data.patientName %></b>
+                </p>
+                <p style="font-size: 14px"><%= data.addressLine1 %></p>
+                <p style="font-size: 14px">
+                  <%= data.city %>, <%= data.province %>, <%=
+                  data.country %> - <%= data.postalCode %>
+                </p>
+                <p style="font-size: 14px">
+                  <%= data.patientPhone %>, <%= data.patientEmail %>
+                </p>
+              </div>
+        </div>
+  </div>
+    <div
+      class="invoice-container"
+      style="
+        max-width: 100%;
+        margin: auto;
+        padding: 1.5rem 0;
+        font-size: 12px;
+        line-height: 24px;
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        color: #000;
+      "
+    >
+      <div class="invoice-box" style="max-width: 100%">
+        <table
+          cellpadding="0"
+          cellspacing="0"
+          style="line-height: inherit; text-align: left; width: 100%"
+        >
+         
+          <tr class="head-info" style="margin-top: 1rem">
+            <td
+              colspan="2"
+              style="vertical-align: middle; padding: 0 1rem 1rem"
+            >
+              <p style="float: left">
+                Invoice No: <b> <%= data.invoiceNumber %></b>
+              </p>
+              <p style="float: right">
+                Date Issued: <b><%= data.dateIssued %></b>
+              </p>
+              <table
+                style="
+                  width: -webkit-fill-available;
+                  margin-top: 2rem;
+                  border-collapse: collapse;
+                  background: #ffffffc4;
+                  width: 100%;
+                "
+              >
+                <tbody
+                  style="
+                    line-height: inherit;
+                    text-align: left;
+                    padding: 0 5px;
+                    margin-top: 1rem;
+                  "
+                >
+                  <tr
+                    style="
+                      font-size: 12px;
+                      border: 1px solid #f1f1f1;
+                      padding: 1rem 0;
+                    "
+                  >
+                    <td
+                      style="
+                        vertical-align: middle;
+                        text-align: left;
+                        width: -webkit-fill-available;
+                      "
+                    >
+                      <div style="padding: 0.8rem">
+                        <p>Prescribed By</p>
+                        <p style="font-weight: 600">
+                          Dr. <%= data.providerName %>
+                        </p>
+                      </div>
+                    </td>
+                    <td
+                      style="
+                        vertical-align: middle;
+                        text-align: left;
+                        border-left: 1px solid #f1f1f1;
+                        border-right: 1px solid #f1f1f1;
+                      "
+                    >
+                      <div style="padding: 0.8rem">
+                        <p>Patient ID</p>
+                        <p style="font-weight: 600"><%= data.patientId %></p>
+                      </div>
+                    </td>
+                    <td style="vertical-align: middle; text-align: left">
+                      <div style="padding: 0.8rem">
+                        <p>Appointment No</p>
+                        <p style="font-weight: 600">
+                          <%= data.appointmentNumber %>
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 style="font-size: 12px; margin-top: 1.4rem">
+                Detailed Information
+              </h5>
+              <table
+                class="product-details"
+                style="
+                  border-collapse: collapse;
+                  line-height: inherit;
+                  text-align: left;
+                  float: left;
+                  margin-top: 1rem;
+                  width: -webkit-fill-available;
+                  margin-bottom: 0.3rem;
+                  background: #ffffffc4;
+                  font-size: 12px;
+                "
+              >
+                <tbody style="border: 1px solid #f1f1f1">
+                  <tr style="background: #f8f8f8">
+                    <th style="border-left: none; padding: 1rem">
+                      <b>Item Name & Description</b>
+                    </th>
+                    <th style="border-right: 0; padding: 1rem"><b>Qty</b></th>
+                    <th style="border-right: 0; padding: 1rem"><b>Price</b></th>
+                    <th style="border-right: 0; padding: 1rem"><b>Total</b></th>
+                  </tr>
+
+                  <tr
+                    class="product-td"
+                    style="border-bottom: 1px solid #f1f1f1"
+                  >
+                    <td
+                      style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: middle;
+                        padding: 0.5rem 1rem;
+                      "
+                    >
+                      <p style="font-weight: 700">
+                        <%= data.specialisationName %>
+                      </p>
+                      <p style="font-size: 12px">
+                        <%= data.specialisationDescription %>
+                      </p>
+                    </td>
+                    <td
+                      style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: middle;
+                        padding: 0.5rem 1rem;
+                      "
+                    >
+                      01
+                    </td>
+                    <td
+                      style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: middle;
+                        padding: 0.5rem 1rem;
+                      "
+                    >
+                      $<%= data.specialisationPrice %>
+                    </td>
+                    <td
+                      style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: middle;
+                        padding: 0.5rem 1rem;
+                      "
+                    >
+                      $<%= data.specialisationPrice %>
+                    </td>
+                  </tr>
+                  <!-- <tr class="product-td" style="border-bottom: 1px solid #f1f1f1">
+                    <td style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: middle;
+                        padding: 0.5rem 1rem;
+                      ">
+                      <p style="font-weight: 700">
+                        Item Name 2
+                      </p>
+                      <p style="font-size: 14px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
+                    </td>
+                    <td style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: middle;
+                        padding: 0.5rem 1rem;
+                      ">
+                      01
+                    </td>
+                    <td style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: middle;
+                        padding: 0.5rem 1rem;
+                      ">
+                      $200.00
+                    </td>
+                    <td style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: middle;
+                        padding: 0.5rem 1rem;
+                      ">
+                      $200.00
+                    </td>
+                  </tr> -->
+                  <tr
+                    class="product-td"
+                    style="border-bottom: 1px solid #f1f1f1"
+                  >
+                    <td
+                      style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: top;
+                        padding: 0.5rem 1rem;
+                        text-align: right;
+                      "
+                      colspan="3"
+                    >
+                      <p style="font-weight: 600">Subtotal</p>
+                    </td>
+                    <td
+                      style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: top;
+                        padding: 0.5rem 1rem;
+                      "
+                    >
+                      $<%= data.specialisationPrice %>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: middle; padding: 0 1rem 1rem">
+              <p style="margin-bottom: 0.8rem">
+                Payment Terms: Your order will be processed once payment has
+                been received.
+              </p>
+              <b style="float: left">Payments</b>
+              <table
+                class="product-details"
+                style="
+                  border-collapse: collapse;
+                  line-height: inherit;
+                  text-align: left;
+                  float: left;
+                  margin-top: 0.5rem;
+                  width: -webkit-fill-available;
+                  margin-bottom: 0.3rem;
+                  background: #ffffffc4;
+                "
+              >
+                <tbody style="border: 1px solid #f1f1f1">
+                  <tr style="background: #f8f8f8">
+                    <th style="border-left: none; padding: 1rem">
+                      <b>Date</b>
+                    </th>
+                    <th style="border-right: 0; padding: 1rem">
+                      <b>Payment Method</b>
+                    </th>
+                    <th style="border-right: 0; padding: 1rem">
+                      <b>Total Payment Received</b>
+                    </th>
+                  </tr>
+
+                  <tr
+                    class="product-td"
+                    style="border-bottom: 1px solid #f1f1f1"
+                  >
+                    <td
+                      style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: middle;
+                        padding: 0.5rem 1rem;
+                      "
+                    >
+                      <p style="font-size: 12px"><%= data.dateIssued %></p>
+                    </td>
+                    <td
+                      style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: middle;
+                        padding: 0.5rem 1rem;
+                        font-size: 12px;
+                      "
+                    >
+                      <p style="font-weight: 600"><%= data.dateIssued %></p>
+                      <p>Ending with <%= data.endingWith %></p>
+                    </td>
+                    <td
+                      style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: middle;
+                        padding: 0.5rem 1rem;
+                      "
+                    >
+                      $<%= data.specialisationPrice %>
+                    </td>
+                  </tr>
+
+                  <tr
+                    class="product-td"
+                    style="border-bottom: 1px solid #f1f1f1"
+                  >
+                    <td
+                      style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: top;
+                        padding: 0.5rem 1rem;
+                        text-align: right;
+                      "
+                      colspan="2"
+                    >
+                      <p style="font-weight: 600">Total Payment</p>
+                    </td>
+                    <td
+                      style="
+                        padding: 0 10px;
+                        height: 15px;
+                        vertical-align: top;
+                        padding: 0.5rem 1rem;
+                      "
+                    >
+                      $<%= data.specialisationPrice %>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- <h4>DIRECT DEBIT</h4>
+                <p>Account name: Michelle Squire TA Qr8 <br> BSB: 014 245 <br> Account No: 420 193 793 <br> Please reference your invoice number & email remittance to info@Qr8list.com</p> -->
+            </td>
+          </tr>
+          <!-- <tr>
+            <td colspan="2" style="vertical-align: top">
+              <table
+                style="
+                  line-height: inherit;
+                  text-align: left;
+                  padding: 0 5px;
+                  position: relative;
+                  padding: 1rem;
+                  border-top: 1px solid #f1f1f1;
+                  border-bottom: 5px solid #95785e;
+                  width: 100%;
+                  margin-top: 2rem;
+                "
+              >
+                <tbody>
+                  <tr style="font-size: 14px">
+                    <td style="vertical-align: middle; display: inline">
+                      <div style="float: left; margin-right: 1rem">
+                        <img src="data:image/png;base64,<%= data.footerLogo %>" alt="" />
+                      </div>
+                      <p style="color: #999999">
+                        At Qr8, your trust is foremost. Your health is very
+                        important to us and we ensure to deliver best care
+                        possible.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr> -->
+        </table>
+        <div>
+          <div style="vertical-align: top;">
+            <div id="pageFooter" style="
+              text-align: left;
+              padding: 3.5rem 1rem 2rem 1rem;
+              border-top: 1px solid #F1F1F1;
+              width: 100%;
+              height:40px;
+              font-size: 12px;
+              padding-top: .5rem;
+            ">
+                <div style="vertical-align: top">
+                  <div style="float: left;margin-right: 1rem;">
+                    <img src="data:image/png;base64,<%= data.footerLogo %>" style="height:50px;object-fit: cover;" alt="" />
+                  </div>
+                </div>
+                <div style="vertical-align: middle;padding-top: .6rem;padding-left: 1rem;width:70%;">
+                  <p style="color: #999999">At Qr8, your trust is foremost. Your health is very
+                    important to us and we ensure to deliver best care
+                    possible.
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

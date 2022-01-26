@@ -1,0 +1,13 @@
+[
+  {
+    "name": "QR mediskin",
+    "description": "QR mediskin",
+    "isFree": false,
+    "isDelete": false,
+    "isDeleted": false,
+    "isCommingSoon": false,
+    "price": 50,
+    "sequence": 1,
+    "isActive": true
+  }
+]

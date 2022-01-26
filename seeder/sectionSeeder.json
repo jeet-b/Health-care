@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Personalised Questionnaire",
+    "sequence": 1,
+    "subTitle": "Before starting your Qr8 journey, there are a few things we'd like you to know."
+  },
+  {
+    "name": "Let's get to know each other",
+    "sequence": 2,
+    "subTitle": "The wise man therefore always holds in these matters to this principle of selection."
+  },
+  {
+    "name": "Let's talk about your skin",
+    "sequence": 3
+  },
+  {
+    "name": "Let's talk about your skin",
+    "sequence": 4,
+    "subTitle": "The wise man therefore always holds in these matters to this principle of selection."
+  },
+  {
+    "name": "Let's talk about your skin",
+    "sequence": 5,
+    "subTitle": "Tell us about your current skincare routine As some medications can make skin sensitive to the sun, do you agree to wear an SPF (at least 30+) every day whilst using them?"
+  },
+  {
+    "name": "Let's talk about your skin",
+    "sequence": 6
+  },
+  {
+    "name": "Let's talk about your skin",
+    "sequence": 7,
+    "subTitle": "Prescription skincare is a medication, and can interact with other medications so we need to ask about those too."
+  },
+  {
+    "name": "Let's talk about your skin",
+    "sequence": 8,
+    "subTitle": "Tell us a little about your current skincare routine"
+  },
+  {
+    "name": "Other Information",
+    "sequence": 9,
+    "subTitle": "Is there any other information you would like to share with us, or specific questions you would like answered in your video consult?"
+  },
+  {
+    "name": "Front View",
+    "sequence":10,
+    "subTitle": "Stand in a well-lit area, in front of a plain background. For more tips, see below."
+  },
+  {
+    "name": "Right Side Profile",
+    "sequence": 11,
+    "subTitle": "Turn 90 degrees to the left and photograph the right side of your face."
+  },
+  {
+    "name": "Left Side Profile",
+    "sequence": 12,
+    "subTitle": "Turn 90 degrees to the left and photograph the left side of your face."
+  },
+  {
+    "name": "Current Product Lineup",
+    "sequence": 13,
+    "subTitle": "Please upload a photo of your current product lineup."
+  }
+]

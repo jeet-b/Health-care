@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "606c1f9616e3669692e7ec9e",
+    "isApproved": false,
+    "licenseFiles": [],
+    "emrIds": [],
+    "hmrEnabled": false,
+    "firstName": "admin",
+    "middleName": "Test",
+    "lastName": "Test",
+    "clinicName": "value-added",
+    "email": "qr8@mailinator.com",
+    "phone": "9925128487",
+    "emails": [
+      {
+        "isApproved": true,
+        "countryCode": "+1",
+        "isVerified": true,
+        "isDefault": true,
+        "_id": "606c1f9616e3669692e7ec9f",
+        "email": "qr8Admin@mailinator.com",
+        "name": "Rudy Kozey DDS",
+        "verificationCode": "transmitting"
+      }
+    ],
+    "phones": [
+      {
+        "countryCode": "+91",
+        "isVerified": true,
+        "isDefault": true,
+        "_id": "606d955a9256ee4c889561ea",
+        "phone": "9925128487"
+      }
+    ],
+    "password": "admin123",
+    "tfa": true,
+    "role": "ADMIN",
+    "tfa_authentication_code": "KEZUYVDZK5DCK3TSGBLXA5ZGPM3VM4K5IFISKQZQMQ3FULCOEY6A",
+    "tfa_image_url": "data:image/png;base64,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"
+  }
+]

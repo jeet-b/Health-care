@@ -1,0 +1,1 @@
+const jobConfiguration = require('./jobConfiguration');

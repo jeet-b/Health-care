@@ -1,0 +1,33 @@
+const joi = require('joi');
+exports.schemaKeys = joi.object({
+  name: joi.string().required(),
+  code: joi.string().required(),
+  phoneCode: joi.string(),
+  isActive: joi.boolean().default(true),
+  createdBy: joi.object(),
+  updatedBy: joi.object(),
+  deletedBy: joi.object(),
+  deletedAt: joi.date(),
+  isDelete: joi.boolean().default(false),
+  isDeleted: joi.boolean()
+}).unknown(true);
+exports.updateSchemaKeys = joi.object({
+  name: joi.string().when({
+    is:joi.exist(),
+    then:joi.required(),
+    otherwise:joi.optional()
+  }),
+  code: joi.string().when({
+    is:joi.exist(),
+    then:joi.required(),
+    otherwise:joi.optional()
+  }),
+  phoneCode: joi.string(),
+  isActive: joi.boolean().default(true),
+  createdBy: joi.object(),
+  updatedBy: joi.object(),
+  deletedBy: joi.object(),
+  deletedAt: joi.date(),
+  isDelete: joi.boolean().default(false),
+  isDeleted: joi.boolean()
+}).unknown(true);

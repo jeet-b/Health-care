@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "5e327b04d31f0818e8b50dd1",
+    "name": "Admin",
+    "code": "ADMIN",
+    "weight": 1
+  },
+  {
+    "_id": "5e3279da1d0b6718e8301656",
+    "name": "Patient",
+    "code": "PATIENT",
+    "weight": 2
+  },
+  {
+    "_id": "5f902c9aecb6925b7f2951cf",
+    "name": "Physician",
+    "code": "PHYSICIAN",
+    "weight": 3
+  },
+  {
+    "_id": "5f902c9ff9b3d94e06221592",
+    "name": "Staff",
+    "code": "STAFF",
+    "weight": 4
+  },
+  {
+    "_id": "5f902cc6e0f4c5aef1cb7aec",
+    "name": "Pharmacy",
+    "code": "PHARMACY",
+    "weight": 5
+  }
+]

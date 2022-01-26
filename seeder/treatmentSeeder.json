@@ -1,0 +1,21 @@
+[
+    {
+        "specialisationId": "610a71c22e2df848ad064068",
+        "name": "Skin treatment",
+        "images":["6131dbe975cd755d054948b8","6131db7975cd755d054948b7"],
+        "ingredients": [{
+                "name": "Sodium",
+                "percentage":20        
+            },
+            {
+                "name": "Sulphur",
+                "percentage":50        
+            },
+            {
+                "name": "Protiens",
+                "percentage":80        
+         }],
+        "size":"50mg-60$",
+        "patientInstruction":"Apply only on skin. Not for body intake!"
+    }
+]

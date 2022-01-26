@@ -1,0 +1,19 @@
+/.env
+/.vscode
+/node_modules
+/postman
+.idea/*
+.history/*
+# /public
+/public/files
+/public/images
+/public/invoice
+/public/node_modules
+/public/bower_components
+.env
+**/.DS_Store
+.DS_Store
+.idea/
+npm-debug.log   
+/package-lock.json
+/assets/invoice

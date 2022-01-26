@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Priceline Pharmacy",
+        "emails":[{
+            "email":"priceline@gmail.com"
+        }],
+        "phones":[{
+            "phone":"1234567890"
+        }],
+        "fax":[{
+            "faxNumber":"323 555 1234"
+        }],
+        "address":[{
+            "addressLine1": "sensor",
+            "addressLine2": "Borders",
+            "country": "Austrailia",
+            "city": "city",
+            "province": "province",
+            "postalCode": "SA234",
+            "isActive": true
+          }],
+        "accreditat":"Austalian Pharmacy Council",
+        "isDefault": true
+
+    }
+]

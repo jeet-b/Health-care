@@ -1,0 +1,435 @@
+[
+  {
+    "isActive": true,
+    "name": "Language",
+    "code": "LANGUAGE",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "English",
+        "code": "ENGLISH",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Punjabi",
+        "code": "PUNJABI",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Gender",
+    "code": "GENDER",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "Male",
+        "code": "MALE",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Female",
+        "code": "FEMALE",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Prefer not to say",
+        "code": "PREFER_NOT_TO_SAY",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Hear about us",
+    "code": "HEAR_ABOUT_US",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "Facebook",
+        "code": "FACEBOOK",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Google ads",
+        "code": "GOOGLE_ADS",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Twitter",
+        "code": "TWITTER",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Time zone",
+    "code": "TIME_ZONE",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "Norfolk Island Standard Time",
+        "code": "NORTHFOLK",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Australian Central Standard Time",
+        "code": "CENTRAL",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Australian Western Standard Time",
+        "code": "WESTERN",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Christmas Island Time",
+        "code": "CHRISTMAS",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Cancellation Reason",
+    "code": "CANCELLATION_REASON",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "Complicated",
+        "code": "COMPLICATED",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Service is not required anymore",
+        "code": "SERVICE_NOT_REQUIRED_ANYMORE",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Cost is high",
+        "code": "HIGH_COST",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "RESCHEDULE REASON",
+    "code": "RESCHEDULE_REASON",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "For time change",
+        "code": "CHANGE_TIME",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Technical issue",
+        "code": "TECHNICAL_ISSUE",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Other",
+        "code": "OTHER",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Diagnosis",
+    "code": "DIAGNOSIS",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "Patch testing",
+        "code": "PATCH_TESTING",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Allergens",
+        "code": "ALLERGENS",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Other",
+        "code": "OTHER",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Allergies",
+    "code": "ALLERGIES",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "Chemical",
+        "code": "CHEMICAL",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Edible Oil",
+        "code": "EDIBLE_OIL",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Others",
+        "code": "OTHERS",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Payment Status",
+    "code": "PAYMENT_STATUS",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "PENDING",
+        "code": "PENDING",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "COMPLETED",
+        "code": "COMPLETED",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "SUCCESS",
+        "code": "SUCCESS",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "PAYMENT_FAILED",
+        "code": "PAYMENT_FAILED",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "REFUNDED",
+        "code": "REFUNDED",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Appointment Type",
+    "code": "APPOINTMENT_TYPE",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "NEW",
+        "code": "NEW",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "FOLLOW_UP",
+        "code": "FOLLOW_UP",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Charge Type",
+    "code": "CHARGE_TYPE",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "Book Appointment",
+        "code": "BOOK_APPOINTMENT",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Treatment Payment",
+        "code": "TREATMENT_PAYMENT",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Medicine Size",
+    "code": "TREATMENT_SIZE",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "100 gm",
+        "code": "100_GM",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "50 gm",
+        "code": "50_GM",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Terms and Conditions",
+    "code": "TERMS_AND_CONDITIONS",
+    "parentId": null,
+    "isDeleted": false
+  },
+  {
+    "isActive": true,
+    "name": "Let's get to know each other",
+    "code": "LET'S_GET_TO_KNOW_EACH_OTHER",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "The wise man therefore always holds in these matters to this principle of selection.",
+        "code": "LET'S_GET_TO_KNOW_EACH_OTHER_OPT_1",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Let's talk about your skin",
+    "code": "LET'S_TALK_ABOUT_YOUR_SKIN",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "The wise man therefore always holds in these matters to this principle of selection.",
+        "code": "LET'S_TALK_ABOUT_YOUR_SKIN_OPT_1",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Tell us about your current skincare routine As some medications can make skin sensitive to the sun, do you agree to wear an SPF (at least 30+) every day whilst using them?",
+        "code": "LET'S_TALK_ABOUT_YOUR_SKIN_OPT_2",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Prescription skincare is a medication, and can interact with other medications so we need to ask about those too.",
+        "code": "LET'S_TALK_ABOUT_YOUR_SKIN_OPT_3",
+        "isActive": true,
+        "isDefault": false
+      },
+      {
+        "name": "Tell us a little about your current skincare routine",
+        "code": "LET'S_TALK_ABOUT_YOUR_SKIN_OPT_4",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Front View",
+    "code": "FRONT_VIEW",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "Stand in a well-lit area, in front of a plain background. For more tips, see below.",
+        "code": "FRONT_PROFILE_OPT_1",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Right Side Profile",
+    "code": "RIGHT_SIDE_PROFILE",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "Turn 90 degrees to the right and photograph the right side of your face.",
+        "code": "RIGHT_SIDE_PROFILE_OPT_1",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Left Side Profile",
+    "code": "LEFT_SIDE_PROFILE",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "Turn 90 degrees to the left and photograph the left side of your face.",
+        "code": "LEFT_SIDE_PROFILE_OPT_1",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "isActive": true,
+    "name": "Current Product Lineup",
+    "code": "CURRENT_PRODUCT_LINEUP",
+    "parentId": null,
+    "isDeleted": false,
+    "children": [
+      {
+        "name": "Please upload a photo of your current product lineup.",
+        "code": "CURRENT_PRODUCT_LINEUP_OPT_1",
+        "isActive": true,
+        "isDefault": false
+      }
+    ]
+  }
+]

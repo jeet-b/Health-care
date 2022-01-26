@@ -1,0 +1,187 @@
+{
+    "response_message": {
+        "badRequest": "The request cannot be fulfilled due to bad syntax",
+        "isDuplicate": "Data duplication Found",
+        "recordNotFound": "Record not found with specified criteria.",
+        "insufficientParameters": "Insufficient parameters",
+        "mongoError": "Mongo db related error",
+        "inValidParam": "Invalid values in parameters",
+        "unAuthorizedRequest": "You are not authorized to access the request",
+        "failedSoftDelete": "Data can not be soft deleted due to internal server error",
+        "server_error": "Something bad happened on the server."
+    },
+    "auth": {
+        "loginSuccess": "Login Successful",
+        "logoutSuccess":"Logout Successful",
+        "loginFailed": "Please enter valid credentials",
+        "passwordEmailWrong": "username or password is wrong",
+        "deactivated_email": "Account with this email is deactivated.",
+        "deactivated_phone": "Account with this phone is deactivated.",
+        "email_otp_sent": "We have sent OTP on your email address, kindly check it.",
+        "phone_otp_sent": "We have sent OTP on your phone address, kindly check it.",
+        "otp_failed": "otp Cannot Send due to error",
+        "account_not_found_email": "There’s no account found with this email address.",
+        "account_not_found_phone": "There’s no account found with this phone.",
+        "otp_expired": "Your reset password code is expired.",
+        "otp_verify": "Otp verified successfully.",
+        "otp_invalid": "Invalid OTP",
+        "reset_password_link_expired": "Your reset password link is expired.",
+        "register": "User register successfully.",
+        "role_not_found": "Role not found",
+        "register_error": "Error in Register",
+        "password_changed": "Password is changed Successfully",
+        "invalid_token": "Invalid Token",
+        "resend_otp_success": "OTP resent successfully.",
+        "email_already_verified": "Your Email is Already Verified",
+        "phone_already_verified": "Your Phone is Already Verified",
+        "login_otp_verify_success": "Your log in OTP has been successfully verified.",
+        "forgot_password": "Reset password email has been sent. Please follow instructions to reset your password.",
+        "change_password": "Password has been changed successfully.",
+        "logout": "Logout successfully.",
+        "email_verify_success": "Your email is verified successfully.",
+        "phone_verify_success": "Your phone is verified successfully.",
+        "email_sent": "The email has been sent successfully.",
+        "sns_added": "SNS token generated successfully.",
+        "link_used": "Reset Password link is already used.",
+        "admin_not_found":"There is no Admin with this email."
+    },
+    "appointment": {
+        "findAll": "All appointment have been fetched successfully.",
+        "find": "Appointment has been fetched successfully.",
+        "create": "Appointment has been created successfully.",
+        "follow_up_exist": "Follow Up Appointment exists",
+        "follow_up_create": "Follow Up Appointment created successfully",
+        "select_timeslot": "Please select timeslot",
+        "select_valid_timeslot": "Please select valid timeslot",
+        "slot_already_booked": "Sorry! The slot you selected is already booked.",
+        "reschedule_error": "You cannot reschedule twice!",
+        "update": "Appointment has been updated successfully.",
+        "cancel": "Appointment has been cancelled successfully.",
+        "book": "Appointment has been booked successfully.",
+        "reschedule": "Appointment has been reschedule successfully.",
+        "rebook": "Appointment has been rebook successfully."
+    },
+    "appointmentSummary": {
+        "findAll": "All Appointment summary have been fetched successfully.",
+        "findAllDocuments": "All documents have been fetched successfully.",
+        "find": "Appointment summary has been fetched successfully.",
+        "create": "Note has been created successfully.",
+        "update": "Note has been updated successfully."
+    },
+    "dashboard": {
+        "admin_count": "All dashboard count have been fetched successfully.",
+        "chart": "All chart count has been fetched successfully.",
+        "count": "All dashboard Counts are fetched successfully."
+    },
+    "educationContent": {
+        "findAll": "All learn contents have been fetched successfully.",
+        "find": "Learn content has been fetched successfully.",
+        "create": "Learn content has been created successfully.",
+        "update": "Learn content has been updated successfully."
+    },
+    "file": {
+        "upload": "File uploaded successfully.",
+        "remove": "File deleted successfully.",
+        "folder":"Folder required",
+        "not_found": "File not found."
+    },
+    "questionnaire": {
+        "find": "Questionnaire has been fetched successfully."
+    },
+    "questionnaireResponse": {
+        "create": "Questionnaire response has been submitted successfully.",
+        "find": "Questionnaire response has been fetched successfully."
+    },
+    "master": {
+        "admin_create": "Master has been created successfully.",
+        "admin_update": "Master has been updated successfully.",
+        "admin_delete": "Master has been deleted successfully.",
+        "get": "Master has been fetched successfully.",
+        "findAll": "All masters have been fetched successfully.",
+        "code_exist":"code already exists.",
+        "name_exist":"name already exists."
+    },
+    "notification": {
+        "findAll": "All notifications have been fetched successfully.",
+        "count": "Notification count have been fetched successfully.",
+        "update": "Notification has been read successfully.",
+        "updateBulk": "All notifications have been read successfully."
+    },
+    "providerSlot": {
+        "findAll": "Provider slots have been fetched successfully.",
+        "create": "Provider slot has been created successfully.",
+        "update": "Provider slot has been updated successfully.",
+        "providerSlot_findAll": "Provider Slot have been fetched successfully."
+    },
+    "ratingReview": {
+        "findAll": "All ratings have been fetched successfully.",
+        "get": "Rating review has been fetched successfully.",
+        "create": "Your review has been submitted successfully.",
+        "cancelled_error": "Physician cannot be rated for cancelled appointment",
+        "noShow_error": "Physician cannot be rated for noShow appointment"
+    },
+    "specialisation": {
+        "findAll": "All specialisations have been fetched successfully.",
+        "activate":"Specialisation has been activated successfully.",
+        "deactivate":"Specialisation has been deactivated successfully.",
+        "delete":"Specialisation has been deleted successfully.",
+        "image":"Please upload service image",
+        "get": "Specialisation has been fetched successfully.",
+        "update": "Specialisation has been updated successfully.",
+        "create": "Specialisation has been created successfully.",
+        "name_exist":"name already exists."
+    },
+    "treatment": {
+        "findAll": "All treatments have been fetched successfully.",
+        "activate":"Treatment has been activated successfully.",
+        "deactivate":"Treatment has been deactivated successfully.",
+        "delete":"Treatment has been deleted successfully.",
+        "image":"Please upload treatment image",
+        "get": "Treatment has been fetched successfully.",
+        "update": "Treatment has been updated successfully.",
+        "create": "Treatment has been created successfully.",
+        "name_exist":"name already exists."
+    },
+    "stripe": {
+        "create": "Card has been added successfully.",
+        "card_exists": "This card already exists in your account.",
+        "token_generated":"STRIPE token generated",
+        "request_not_validate":"This request is not valid , Please try again !.",
+        "primary_card_remove_error":"Primary card cannot be removed.",
+        "findAll": "All cards have been fetched successfully.",
+        "delete": "Card has been removed successfully.",
+        "default": "Card set default successfully."
+    },
+    "transaction": {
+        "revenueCount":"Revenue count has been fetched successfully.",
+        "findAll": "All transactions have been fetched successfully.",
+        "get": "Transaction has been fetched successfully."
+    },
+    "userActivity": {
+        "findAll": "All user Activity have been fetched successfully.",
+        "get": "User activity has been fetched successfully."
+    },
+    "user": {
+        "findAll": "All users have been fetched successfully.",
+        "findAllPatient": "All patients have been fetched successfully.",
+        "getProfile": "Profile has been fetched successfully.",
+        "updateProfile": "Profile has been updated successfully.",
+        "get_parameters":"Please Provide userId and new Password and Old password",
+        "different_details":"Please choose different one, you are updating the same details.",
+        "otp_sent":"We have sent OTP, please verify and complete this process.",
+        "patient_by_provider":"Patients have been fetched successfully.",
+        "photos_from_questionnaire":"Photos have been fetched successfully.",
+        "deactivate": "Account has been deactivated successfully.",
+        "admin_activate": "Account has been activated successfully.",
+        "admin_createPhysician": "Physician has been added successfully.",
+        "admin_findAllPhysician": "All physicians have been fetched successfully.",
+        "reset_password_link":"Reset password link has been sent successfully"
+    },
+    "videoCall": {
+        "missing_data":"Add Missing Data",
+        "permission_denied":"Sorry You have no permission to update status of call",
+        "not_started":"Sorry the video call has not been started yet",
+        "status": "Video call status have been updated successfully.",
+        "authenticate": "You can join the call."
+    }
+}
