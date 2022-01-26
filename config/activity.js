@@ -1,0 +1,20 @@
+module.exports = [
+  "/device/auth/verify-email",
+  "/device/auth/verify-phone",
+  "/device/auth/login",
+  "/admin/specialisation/create",
+  "/device/api/v1/user/update/:id",
+  "/device/api/v1/user/verify-details",
+  "/device/api/v1/user/change-details",
+  "/device/auth/validate-otp",
+  "/device/api/v1/user/change-password",
+  "/device/auth/reset-password",
+  "/admin/user/update/:id",
+  "/device/auth/register",
+  "/device/api/v1/appointment/book/:id",
+  "/device/api/v1/appointment/cancel/:id",
+  "/device/api/v1/appointment/update/:id",
+  "/device/api/v1/video/updateCallStatus",
+  "/device/api/v1/appointmentsummary/create",
+  "/device/api/v1/payment/treatment/create"
+];
